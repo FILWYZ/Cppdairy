@@ -37,6 +37,18 @@ int main() {
 * `static_var`：地址固定
 * `heap_var`：每次 new 可能不同
 
+/*
+stack : 0x5ffe34
+heap : 0xe5380
+static : 0x7ff66c493004
+stack : 0x5ffe34
+heap : 0xe5380
+static : 0x7ff66c493004
+global : 0x7ff66c493000
+const : 0x7ff66c494000
+string : 0x7ff66c494032
+*/
+
 ---
 
 ## 示例 2：验证字符串字面量共享
@@ -52,15 +64,9 @@ cout << (void*)b << endl;
 👉 多数情况下地址相同。
 
 /*
-stack : 0x5ffe34
-heap : 0xe5380
-static : 0x7ff66c493004
-stack : 0x5ffe34
-heap : 0xe5380
-static : 0x7ff66c493004
-global : 0x7ff66c493000
-const : 0x7ff66c494000
-string : 0x7ff66c494032
+0x7ff7ecd8401f
+0x7ff7ecd8401f
 */
+
 
 ---
