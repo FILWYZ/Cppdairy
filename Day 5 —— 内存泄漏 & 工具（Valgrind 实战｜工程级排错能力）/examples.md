@@ -59,7 +59,5 @@ if (!ok) {
 unique_ptr<int> p(new int(10));
 ```
 
-👉 Day 6 将系统讲解。
-
 ---
 
